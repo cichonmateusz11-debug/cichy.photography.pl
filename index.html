@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cichy Photography | Aviation & Nature</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#050505;
+    color:white;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    padding:20px 8%;
+    background:rgba(0,0,0,.85);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)),
+    url("https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?q=80&w=2000");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:5rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.3rem;
+    color:#ddd;
+    max-width:700px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    background:#f39c12;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:8px;
+}
+
+section{
+    padding:100px 8%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:3rem;
+}
+
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.9;
+    color:#ccc;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    text-align:center;
+}
+
+.card{
+    background:#111;
+    padding:40px;
+    border-radius:12px;
+}
+
+.card h3{
+    color:#f39c12;
+    font-size:2.4rem;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+    color:#ccc;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #222;
+    color:#777;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:3rem;
+}
+
+h2{
+    font-size:2rem;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+    <strong>Cichy Photography</strong>
+
+    <div>
+        <a href="#omnie">O mnie</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#kontakt">Kontakt</a>
+    </div>
+</nav>
+
+<header class="hero">
+
+<div>
+
+<h1>Cichy Photography</h1>
+
+<p>
+Aviation • Airshows • Nature Photography
+</p>
+
+<a href="#portfolio" class="btn">
+Zobacz Portfolio
+</a>
+
+</div>
+
+</header>
+
+<section id="omnie">
+
+<h2>O mnie</h2>
+
+<div class="about">
+
+<p>
+Nazywam się Mateusz i specjalizuję się w fotografii lotniczej,
+pokazach lotniczych oraz fotografii przyrodniczej.
+Moim celem jest uchwycenie emocji, ruchu i wyjątkowych chwil,
+które trwają zaledwie ułamek sekundy.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Statystyki</h2>
+
+<div class="stats">
+
+<div class="card">
+<h3>13+</h3>
+<p>Publikacji</p>
+</div>
+
+<div class="card">
+<h3>157+</h3>
+<p>Obserwujących</p>
+</div>
+
+<div class="card">
+<h3>1000+</h3>
+<p>Obserwowanych</p>
+</div>
+
+<div class="card">
+<h3>∞</h3>
+<p>Pasji</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<h2>Portfolio</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?q=80&w=1200">
+<img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1200">
+<img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?q=80&w=1200">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200">
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1200">
+
+</div>
+
+</section>
+
+<section id="kontakt" class="contact">
+
+<h2>Kontakt</h2>
+
+<p>Instagram: @cichy.photography</p>
+
+<p>Email: kontakt@twojadomena.pl</p>
+
+<p>
+Zapraszam do współpracy oraz zakupu odbitek fotograficznych.
+</p>
+
+</section>
+
+<footer>
+© 2025 Cichy Photography
+</footer>
+
+</body>
+</html>
